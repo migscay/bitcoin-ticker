@@ -41,7 +41,7 @@ const App = () => {
       <>
         <h2>Bitcoin Price</h2>
         <select value={currency} onChange={handleCurrencySelection}> 
-          //short circuit, only if data was returned 
+          {/*short circuit, only if data was returned*/}
           {data && Object.keys(data).map(currency => (
             <option key={currency} value={currency}>
               {currency}
